@@ -1,0 +1,66 @@
+Jan 12 02:50:00 webserver sshd[19980]: Accepted publickey for ci-bot from 192.168.1.60 port 52000 ssh2: ED25519 SHA256:9f8e7d6c5b4a39281706f5e4d3c2b1a0
+Jan 12 02:51:00 webserver systemd-logind[823]: New session 40 of user ci-bot.
+Jan 12 02:58:00 webserver sshd[19990]: Accepted publickey for ops from 192.168.1.50 port 51000 ssh2: RSA SHA256:AbCdEf1234567890AbCdEf1234567890AbCdEf1234
+Jan 12 02:59:10 webserver sudo: ops : TTY=pts/2 ; PWD=/home/ops ; USER=root ; COMMAND=/usr/bin/whoami
+Jan 12 03:05:00 webserver CRON[2099]: (root) CMD (   /usr/lib/php/sessionclean)
+Jan 12 03:09:50 webserver sudo: can : TTY=pts/0 ; PWD=/home/can ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Jan 12 03:10:00 webserver sshd[20001]: Invalid user webmaster from 203.0.113.44 port 51201
+Jan 12 03:10:09 webserver sshd[20002]: Failed password for invalid user admin from 203.0.113.44 port 51203 ssh2
+Jan 12 03:10:18 webserver sshd[20003]: Failed password for invalid user admin from 203.0.113.44 port 51205 ssh2
+Jan 12 03:10:27 webserver sshd[20004]: Failed password for invalid user oracle from 203.0.113.44 port 51207 ssh2
+Jan 12 03:10:30 webserver sshd[20005]: Failed password for
+Jan 12 03:10:36 webserver sshd[20006]: Failed password for invalid user oracle from 203.0.113.44 port 51209 ssh2
+Jan 12 03:10:45 webserver sshd[20007]: Failed password for invalid user postgres from 203.0.113.44 port 51211 ssh2
+Jan 12 03:10:54 webserver sshd[20008]: Failed password for invalid user postgres from 203.0.113.44 port 51213 ssh2
+Jan 12 03:11:00 webserver CRON[2101]: (root) CMD (   /usr/lib/php/sessionclean)
+Jan 12 03:11:03 webserver sshd[20009]: Failed password for invalid user test from 203.0.113.44 port 51215 ssh2
+Jan 12 03:11:12 webserver sshd[20010]: Failed password for invalid user test from 203.0.113.44 port 51217 ssh2
+Jan 12 03:11:21 webserver sshd[20011]: Failed password for invalid user ubuntu from 203.0.113.44 port 51219 ssh2
+Jan 12 03:11:30 webserver sshd[20012]: Failed password for invalid user ubuntu from 203.0.113.44 port 51221 ssh2
+Jan 12 03:11:39 webserver sshd[20013]: Failed password for root from 203.0.113.44 port 51223 ssh2
+Jan 12 03:11:48 webserver sshd[20014]: Failed password for invalid user git from 203.0.113.44 port 51225 ssh2
+Jan 12 03:11:57 webserver sshd[20015]: Failed password for invalid user git from 203.0.113.44 port 51227 ssh2
+Jan 12 03:12:00 webserver sshd[20016]: something completely unrecognised happened here
+Jan 12 03:12:06 webserver sshd[20017]: Connection closed by authenticating user mysql 203.0.113.44 port 51229 [preauth]
+Jan 12 03:12:15 webserver sshd[20018]: Failed password for invalid user jenkins from 203.0.113.44 port 51231 ssh2
+Jan 12 03:12:24 webserver sshd[20019]: Failed password for invalid user jenkins from 203.0.113.44 port 51233 ssh2
+Jan 12 03:12:30 webserver sudo: can : TTY=pts/0 ; PWD=/home/can ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+Jan 12 03:12:33 webserver sshd[20020]: Failed password for invalid user guest from 203.0.113.44 port 51235 ssh2
+Jan 12 03:12:42 webserver sshd[20021]: Failed password for invalid user guest from 203.0.113.44 port 51237 ssh2
+Jan 12 03:12:51 webserver sshd[20022]: Failed password for root from 203.0.113.44 port 51239 ssh2
+Jan 12 03:12:59 webserver sshd:
+Jan 12 03:13:00 webserver sshd[20023]: Invalid user ftpuser from 203.0.113.44 port 51241
+Jan 12 03:13:09 webserver sshd[20024]: Failed password for invalid user support from 203.0.113.44 port 51243 ssh2
+Jan 12 03:13:18 webserver sshd[20025]: Failed password for invalid user support from 203.0.113.44 port 51245 ssh2
+Jan 12 03:13:27 webserver sshd[20026]: Failed password for invalid user administrator from 203.0.113.44 port 51247 ssh2
+Jan 12 03:13:36 webserver sshd[20027]: Failed password for invalid user administrator from 203.0.113.44 port 51249 ssh2
+Jan 12 03:15:00 webserver sshd[20028]: Failed password for can from 192.168.1.30 port 44120 ssh2
+Jan 12 03:15:05 webserver sshd[20029]: Accepted password for can from 192.168.1.30 port 44122 ssh2
+Jan 12 03:16:30 webserver systemd-logind[823]: New session 42 of user can.
+Jan 12 03:20:00 webserver sshd[20030]: Failed password for deploy from 198.51.100.23 port 44550 ssh2
+Jan 12 03:20:25 webserver sshd[20031]: Failed password for deploy from 198.51.100.23 port 44551 ssh2
+Jan 12 03:20:50 webserver sshd[20032]: Failed password for deploy from 198.51.100.23 port 44552 ssh2
+Jan 12 03:21:15 webserver sshd[20033]: Failed password for deploy from 198.51.100.23 port 44553 ssh2
+Jan 12 03:21:40 webserver sshd[20034]: Failed password for deploy from 198.51.100.23 port 44554 ssh2
+Jan 12 03:22:05 webserver sshd[20035]: Failed password for deploy from 198.51.100.23 port 44555 ssh2
+Jan 12 03:22:30 webserver sshd[20036]: Accepted password for deploy from 198.51.100.23 port 44556 ssh2
+Jan 12 03:23:00 webserver sudo: can : TTY=pts/0 ; PWD=/home/can ; USER=root ; COMMAND=/usr/bin/journalctl -u sshd
+Jan 12 04:00:00 webserver sshd[20037]: Failed password for root from 192.0.2.77 port 39001 ssh2
+Jan 12 04:05:00 webserver sudo: can : TTY=pts/1 ; PWD=/home/can ; USER=root ; COMMAND=/usr/bin/apt update
+Jan 12 04:12:00 webserver sshd[20038]: Failed password for root from 192.0.2.77 port 39002 ssh2
+Jan 12 04:24:00 webserver sshd[20039]: Failed password for root from 192.0.2.77 port 39003 ssh2
+Jan 12 04:36:00 webserver sshd[20040]: Failed password for root from 192.0.2.77 port 39004 ssh2
+Jan 12 04:48:00 webserver sshd[20041]: Failed password for root from 192.0.2.77 port 39005 ssh2
+Jan 12 05:00:00 webserver sshd[20042]: Failed password for root from 192.0.2.77 port 39006 ssh2
+Jan 12 05:00:05 webserver sshd[20043]: garbled entry that does not match anything sshd would emit
+Jan 12 05:12:00 webserver sshd[20044]: Failed password for root from 192.0.2.77 port 39007 ssh2
+Jan 12 05:24:00 webserver sshd[20045]: Failed password for root from 192.0.2.77 port 39008 ssh2
+Jan 12 05:30:00 webserver CRON[2102]: (root) CMD (   /usr/local/bin/backup.sh)
+Jan 12 05:36:00 webserver sshd[20046]: Failed password for root from 192.0.2.77 port 39009 ssh2
+Jan 12 05:48:00 webserver sshd[20047]: Failed password for root from 192.0.2.77 port 39010 ssh2
+Jan 12 06:00:00 webserver sshd[20048]: Failed password for root from 192.0.2.77 port 39011 ssh2
+Jan 12 06:01:00 webserver systemd-logind[823]: Removed session 42.
+Jan 12 06:05:00 webserver systemd-logind[823]: Removed session 40.
+Jan 12 06:10:00 webserver sudo: can : TTY=pts/0 ; PWD=/home/can ; USER=root ; COMMAND=/usr/bin/tail -n 200 /var/log/auth.log
+Jan 12 06:15:00 webserver CRON[2200]: (root) CMD (   /usr/lib/php/sessionclean)
+Jan 12 06:20:00 webserver sshd[20049]: Received disconnect from 192.168.1.30 port 44122:11: disconnected by user
