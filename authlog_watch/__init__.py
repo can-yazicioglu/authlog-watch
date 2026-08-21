@@ -26,6 +26,7 @@ from authlog_watch.detectors import (  # noqa: E402
     run_detectors,
 )
 from authlog_watch.report import render_json, render_text  # noqa: E402
+from authlog_watch.cli import main  # noqa: E402
 
 __all__ += [
     "parse_line",
@@ -35,4 +36,5 @@ __all__ += [
     "run_detectors",
     "render_json",
     "render_text",
+    "main",
 ]
