@@ -18,3 +18,10 @@ __all__ = [
     "ScanResult",
     "Severity",
 ]
+
+from authlog_watch.parser import parse_line, parse_lines  # noqa: E402
+
+__all__ += [
+    "parse_line",
+    "parse_lines",
+]

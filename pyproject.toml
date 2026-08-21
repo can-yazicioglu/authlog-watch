@@ -18,5 +18,8 @@ dependencies = []
 [project.scripts]
 authlog-watch = "authlog_watch.cli:main"
 
+[tool.setuptools]
+packages = ["authlog_watch"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
