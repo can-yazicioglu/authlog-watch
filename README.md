@@ -118,6 +118,7 @@ Detection is deliberately kept separate from parsing. The parser's only job is t
 - Each source IP is judged on its own, there is no correlation across many IPs cooperating in the same attack.
 - The tool has no state between runs, so scanning the same log twice reports the same findings twice, nothing is remembered.
 - This is a detection aid, not an intrusion prevention system, it does not block, throttle, or otherwise act on anything it finds.
+- Timestamps are compared as naive local times. RFC 3339 offsets are validated and then discarded, since detection only needs relative ordering within a single host's log. A log containing entries from multiple timezones would beordered incorrectly.
 
 ## Roadmap
 
