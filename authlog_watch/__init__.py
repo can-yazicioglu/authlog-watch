@@ -20,8 +20,16 @@ __all__ = [
 ]
 
 from authlog_watch.parser import parse_line, parse_lines  # noqa: E402
+from authlog_watch.detectors import (  # noqa: E402
+    ALL_DETECTORS,
+    DetectorConfig,
+    run_detectors,
+)
 
 __all__ += [
     "parse_line",
     "parse_lines",
+    "ALL_DETECTORS",
+    "DetectorConfig",
+    "run_detectors",
 ]
