@@ -4,11 +4,35 @@
 
 A command line tool that reads a Linux SSH auth log and reports which source IPs are showing brute force behaviour.
 
+[Quick start](#quick-start) · [Detection rules](#detection-rules) · [Exit codes](#exit-codes) · [Limitations](#limitations)
+
 ## Why
 
-One failed SSH login is not much of a signal. People fat finger passwords all the time. What actually separates an attack from a mistake is not how many attempts happened, it is how many different accounts were tried from the same address. A real user who mistypes a password only ever retries the one account they meant to log into. An address that cycles through root, admin, oracle and postgres in the space of a minute is not a person who forgot their password, it is a script working down a wordlist, so username spread is treated here as the strongest signal in the tool rather than raw volume.
+Repeated SSH login failures need context. This tool combines failure volume,
+short bursts, username spread and successful logins after failures into a small,
+inspectable report. Username spraying receives higher severity than ordinary
+failure volume; a success after repeated failures is flagged for urgent review.
 
-The other finding worth paying attention to above everything else is a successful login that comes right after a run of failures from the same address. Volume and username spread tell you an attack was attempted, they do not tell you whether it worked. A success following several failures means the credentials may have actually been guessed, which is the difference between an attack that bounced off and one that needs an incident response right now, so that case is always reported at the highest severity the tool has.
+These are investigation signals, not proof of compromise. Shared source IPs,
+automation and legitimate retries can also trigger rules. Review the original
+log and account context before deciding what happened.
+
+## Quick start
+
+Requires **Python 3.10+**, with no runtime dependencies.
+
+```bash
+git clone https://github.com/can-yazicioglu/authlog-watch.git
+cd authlog-watch
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
+authlog-watch samples/auth.log
+```
+
+On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1`.
+The bundled sample intentionally produces findings, so an exit code of **1** is
+expected. Use `--json` for structured output; the tool never blocks an address.
 
 ## Usage
 
